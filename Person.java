@@ -8,13 +8,4 @@ public class Person {
 
     public String GetFirstName(){return first_name;}
     public String GetLastName(){return last_name;}
-
-    public static void main(String[] args) {
-        System.out.println("Person Code");
-
-        Person stranger = new Person("Adam", "Cooper");
-
-        System.out.println(stranger.first_name);
-        System.out.println(stranger.last_name);
-    }
 }

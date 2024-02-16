@@ -2,23 +2,16 @@
 public class Couple {
     Person bride, groom;
 
-    public Couple(Person person1, Person person2) {
-        this.bride = person1;
-        this.groom = person2;
+    public Couple(Person bride, Person groom) {
+        this.bride = bride;
+        this.groom = groom;
     }
 
-    public Person GetBride(){return bride;}
-    public Person GetGroom(){return groom;}
+    public String GetBride(){
+        return bride.first_name + " " + bride.last_name;
+    }
 
-    public static void main(String[] args) {
-        System.out.println("Couple Code:");
-
-        Person person1 = new Person("Adam", "Cooper");
-        Person person2 = new Person("Aryadeep", "Ray");
-
-        Couple couple = new Couple(person1, person2);
-
-        System.out.println("Bride: " + couple.bride.first_name);
-        System.out.println("Groom: " + couple.groom.first_name);
+    public String GetGroom(){
+        return groom.first_name + " " + groom.last_name;
     }
 }
